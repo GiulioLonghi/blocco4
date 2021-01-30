@@ -19,7 +19,7 @@ using namespace std;
 
 int main ()
 {
-    char frase [] = " Ciao come stai? Tutto bene grazie! ";
+    char frase [] = "Ciao come stai? Tutto bene grazie!";
     
     //punto 1
     int len = 0;
@@ -27,6 +27,11 @@ int main ()
     cout << endl << "Lunghezza della stringa: " << len << endl;
     //OK
 
+    //punto 2
+    char* temp = new char[len * 2];
+    padStr(frase, '-', temp);
+    cout << "Padded: " << temp << endl;
+    delete[] temp;
     
 
     return 0;
