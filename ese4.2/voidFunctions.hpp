@@ -1,7 +1,8 @@
 #ifndef VOIDFUNCTIONS_H
 #define VOIDFUNCTIONS_H
 
-void
+void string_lenght (char str [], int & dim );
+
 
 #endif
 
